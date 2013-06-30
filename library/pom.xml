@@ -19,11 +19,27 @@
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.google.android</groupId>
-			<artifactId>support-v4</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>local.libs</groupId>
+            <artifactId>support-v4</artifactId>
+            <version>r12</version>
+        </dependency>
 	</dependencies>
+
+    <repositories>
+        <repository>
+            <id>repo</id>
+            <name>repo</name>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>file://${project.basedir}/repo</url>
+        </repository>
+    </repositories>
 
 	<build>
     <sourceDirectory>src</sourceDirectory>
