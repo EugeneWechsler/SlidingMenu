@@ -20,7 +20,6 @@
 
 	<modules>
 		<module>library</module>
-		<module>library-maps-support</module>
 	</modules>
 
 	<scm>
@@ -68,13 +67,28 @@
 				<artifactId>maps</artifactId>
 				<version>17_r1</version>
 			</dependency>
-			<dependency>
-				<groupId>com.google.android</groupId>
-				<artifactId>support-v4</artifactId>
-				<version>r7</version>
-			</dependency>
-		</dependencies>
+            <dependency>
+                <groupId>local.libs</groupId>
+                <artifactId>support-v4</artifactId>
+                <version>r12</version>
+            </dependency>
+        </dependencies>
 	</dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>repo</id>
+            <name>repo</name>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <url>file://${project.basedir}/library/repo</url>
+        </repository>
+    </repositories>
 
 	<build>
 		<pluginManagement>
