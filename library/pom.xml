@@ -22,7 +22,7 @@
         <dependency>
             <groupId>local.libs</groupId>
             <artifactId>support-v4</artifactId>
-            <version>r12</version>
+            <version>r13</version>
         </dependency>
 	</dependencies>
 
