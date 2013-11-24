@@ -19,3 +19,4 @@ gen
 .DS_Store
 target/
 slidingmenu.iml
+library/build
